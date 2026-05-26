@@ -119,7 +119,7 @@ export default function TechStack() {
 
         <h2>
           Frontend systems engineered
-          for modern products.
+          for modern products
         </h2>
 
       </div>

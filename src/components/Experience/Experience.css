@@ -172,19 +172,26 @@
 
 @media (max-width: 600px) {
 
+  .experienceSection {
+    padding: 40px 2%;
+  }
   .experienceHeader h2 {
-    font-size: 40px;
+    font-size: 30px;
   }
 
   .experienceCard {
     border-radius: 28px;
+    text-align: left;
   }
 
   .experienceCard h3 {
-    font-size: 30px;
+    font-size: 22px;
   }
 
   .experienceCard p {
-    font-size: 16px;
+    font-size: 14px;
+  }
+   .projectMeta {
+   align-items: flex-start;
   }
 }

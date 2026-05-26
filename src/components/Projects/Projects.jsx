@@ -72,7 +72,7 @@ const projects = [
     ],
   },
 
- 
+
 ];
 
 export default function Projects() {
@@ -81,59 +81,60 @@ export default function Projects() {
       id="projects"
       className="projectsSection"
     >
-      <div className="projectsHeader">
+      <div className="container">
+        <div className="projectsHeader">
 
-        <SectionLabel>
-          FEATURED PROJECTS
-        </SectionLabel>
+          <SectionLabel>
+            FEATURED PROJECTS
+          </SectionLabel>
 
-        <h2>
-          Enterprise applications engineered for scale.
-        </h2>
+          <h2>
+            Enterprise applications engineered for scale.
+          </h2>
 
-      </div>
+        </div>
 
-      <div className="projectsGrid">
+        <div className="projectsGrid">
 
-        {projects.map((project, index) => (
+          {projects.map((project, index) => (
 
-          <div
-            className="projectCard"
-            key={index}
-          >
+            <div
+              className="projectCard"
+              key={index}
+            >
 
-            <div className="projectOverlay" />
+              <div className="projectOverlay" />
 
-            <p className="projectType">
-              {project.type}
-            </p>
+              <p className="projectType">
+                {project.type}
+              </p>
 
-            <h3>
-              {project.title}
-            </h3>
+              <h3>
+                {project.title}
+              </h3>
 
-            <p className="projectDescription">
-              {project.description}
-            </p>
+              <p className="projectDescription">
+                {project.description}
+              </p>
 
-            <div className="projectTags">
+              <div className="projectTags">
 
-              {project.tags.map((tag, i) => (
+                {project.tags.map((tag, i) => (
 
-                <span key={i}>
-                  {tag}
-                </span>
+                  <span key={i}>
+                    {tag}
+                  </span>
 
-              ))}
+                ))}
+
+              </div>
 
             </div>
 
-          </div>
+          ))}
 
-        ))}
-
+        </div>
       </div>
-
     </section>
   );
 }

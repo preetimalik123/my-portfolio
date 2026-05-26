@@ -1,153 +1,157 @@
 /* components/Contact/Contact.css */
 
 .contactSection {
-  position: relative;
-  z-index: 2;
+    position: relative;
+    z-index: 2;
 
-  min-height: 100vh;
+    min-height: 100vh;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-  padding: 100px 0;
+    padding: 100px 0;
 
-  text-align: center;
+    text-align: center;
 }
 
 .contactContent {
-  width: 100%;
-  max-width: 1000px;
+    width: 100%;
+    max-width: 1000px;
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .contactContent h2 {
-  font-size: clamp(48px, 6vw, 90px);
+    font-size: clamp(48px, 6vw, 90px);
 
-  line-height: 1;
+    line-height: 1;
 
-  letter-spacing: -0.05em;
+    letter-spacing: -0.05em;
 
-  margin-bottom: 28px;
+    margin-bottom: 28px;
 
-  max-width: 900px;
+    max-width: 900px;
 }
 
 .contactDescription {
-  max-width: 700px;
+    max-width: 700px;
 
-  font-size: 20px;
-  line-height: 1.9;
+    font-size: 20px;
+    line-height: 1.9;
 
-  color: rgba(255,255,255,0.72);
+    color: rgba(255, 255, 255, 0.72);
 
-  margin-bottom: 48px;
+    margin-bottom: 48px;
 }
 
 /* BUTTONS */
 
 .contactActions {
-  display: flex;
-  align-items: center;
-  gap: 18px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
 
-  flex-wrap: wrap;
-  justify-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .contactBtn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 
-  padding: 18px 34px;
+    padding: 18px 34px;
 
-  border-radius: 999px;
+    border-radius: 999px;
 
-  font-weight: 600;
+    font-weight: 600;
 
-  transition:
-    transform 0.3s ease,
-    background 0.3s ease,
-    border 0.3s ease,
-    box-shadow 0.3s ease;
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease,
+        border 0.3s ease,
+        box-shadow 0.3s ease;
 }
 
 /* PRIMARY */
 
 .contactBtn.primary {
-  background: #d6ff3f;
-  color: black;
+    background: #d6ff3f;
+    color: black;
 }
 
 .contactBtn.primary:hover {
-  transform: translateY(-4px);
+    transform: translateY(-4px);
 
-  box-shadow:
-    0 12px 40px rgba(214,255,63,0.22);
+    box-shadow:
+        0 12px 40px rgba(214, 255, 63, 0.22);
 }
 
 /* SECONDARY */
 
 .contactBtn.secondary {
-  background:
-    rgba(255,255,255,0.05);
+    background:
+        rgba(255, 255, 255, 0.05);
 
-  border:
-    1px solid rgba(255,255,255,0.1);
+    border:
+        1px solid rgba(255, 255, 255, 0.1);
 
-  backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
 
-  color: white;
+    color: white;
 }
 
 .contactBtn.secondary:hover {
-  background:
-    rgba(255,255,255,0.1);
+    background:
+        rgba(255, 255, 255, 0.1);
 
-  transform: translateY(-4px);
+    transform: translateY(-4px);
 }
 
 /* TABLET */
 
 @media (max-width: 900px) {
 
-  .contactSection {
-    min-height: auto;
-    padding: 60px 7%;
-  }
+    .contactSection {
+        min-height: auto;
+        padding: 60px 7%;
+    }
 
-  .contactContent h2 {
-    font-size: 58px;
-  }
+    .contactContent h2 {
+        font-size: 58px;
+    }
 
-  .contactDescription {
-    font-size: 17px;
-  }
+    .contactDescription {
+        font-size: 17px;
+    }
 }
 
 /* MOBILE */
 
 @media (max-width: 600px) {
+    .contactSection {
 
-  .contactContent h2 {
-    font-size: 42px;
-  }
+        padding: 40px;
+    }
 
-  .contactDescription {
-    font-size: 16px;
-    line-height: 1.8;
-  }
+    .contactContent h2 {
+        font-size: 30px;
+    }
 
-  .contactActions {
-    flex-direction: column;
-    width: 100%;
-  }
+    .contactDescription {
+        font-size: 15px;
+        line-height: 1.8;
+    }
 
-  .contactBtn {
-    width: 100%;
-  }
+    .contactActions {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .contactBtn {
+        width: 100%;
+    }
 }

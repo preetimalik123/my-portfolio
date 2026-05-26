@@ -211,11 +211,11 @@
 @media (max-width: 600px) {
 
   .techStackHeader h2 {
-    font-size: 40px;
+    font-size: 30px;
   }
 
   .specRow {
-    padding: 28px 0;
+    padding: 28px 10px;
   }
 
   .specLeft {
@@ -223,7 +223,8 @@
   }
 
   .specLeft h3 {
-    font-size: 24px;
+    font-size: 22px;
+    text-align: left;
   }
 
   .specArrow {
@@ -231,6 +232,7 @@
   }
 
   .specText {
-    font-size: 16px;
+    font-size: 14px;
+    text-align: left;
   }
 }
