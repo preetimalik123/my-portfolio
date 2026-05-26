@@ -1,0 +1,25 @@
+/* components/Layout/SectionLabel.css */
+
+.sectionLabel {
+  margin-bottom: 24px;
+
+  font-size: 13px;
+
+  letter-spacing: 0.25em;
+
+  font-weight: 500;
+
+  color: rgba(255,255,255,0.5);
+
+  text-transform: uppercase;
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+  .sectionLabel {
+    font-size: 12px;
+    letter-spacing: 0.18em;
+  }
+}

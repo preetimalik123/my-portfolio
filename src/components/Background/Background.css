@@ -1,0 +1,174 @@
+/* components/Background/Background.css */
+
+.background {
+  position: fixed;
+  inset: 0;
+
+  overflow: hidden;
+
+  z-index: 0;
+
+  pointer-events: none;
+}
+
+/* MOUSE GLOW */
+
+.mouseGlow {
+  position: fixed;
+
+  width: 500px;
+  height: 500px;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(214,255,63,0.14),
+      rgba(0,140,255,0.08),
+      transparent 70%
+    );
+
+  filter: blur(80px);
+
+  pointer-events: none;
+
+  z-index: 1;
+}
+
+/* PARTICLES */
+
+.particles {
+  position: absolute;
+  inset: 0;
+}
+
+.particle {
+  position: absolute;
+
+  width: 3px;
+  height: 3px;
+
+  border-radius: 50%;
+
+  background: rgba(255,255,255,0.5);
+
+  animation:
+    floatParticle 8s infinite ease-in-out;
+}
+
+@keyframes floatParticle {
+
+  0% {
+    transform: translateY(0px);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(-120px);
+    opacity: 0;
+  }
+}
+
+/* GRID */
+
+.grid {
+  position: absolute;
+  inset: -300px;
+
+  background-image:
+    linear-gradient(
+      rgba(255,255,255,0.05) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(255,255,255,0.05) 1px,
+      transparent 1px
+    );
+
+  background-size: 90px 90px;
+
+  transform:
+    perspective(1200px)
+    rotateX(78deg);
+
+  transform-origin: top;
+
+  opacity: 0.35;
+}
+
+/* GLOWS */
+
+.glow {
+  position: absolute;
+
+  border-radius: 50%;
+
+  filter: blur(140px);
+
+  mix-blend-mode: screen;
+}
+
+.glowOne {
+  width: 700px;
+  height: 700px;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(214,255,63,0.18),
+      transparent 70%
+    );
+
+  top: -200px;
+  left: -200px;
+}
+
+.glowTwo {
+  width: 650px;
+  height: 650px;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(0,120,255,0.16),
+      transparent 70%
+    );
+
+  bottom: -200px;
+  right: -200px;
+}
+
+/* TABLET */
+
+@media (max-width: 900px) {
+
+  .mouseGlow {
+    width: 350px;
+    height: 350px;
+  }
+
+  .glowOne,
+  .glowTwo {
+    width: 450px;
+    height: 450px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+  .grid {
+    background-size: 60px 60px;
+  }
+
+  .mouseGlow {
+    filter: blur(60px);
+  }
+}

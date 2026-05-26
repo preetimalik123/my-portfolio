@@ -1,0 +1,80 @@
+/* components/About/About.css */
+
+.aboutSection {
+  position: relative;
+  z-index: 2;
+
+  min-height: 75vh;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+
+  padding: 100px 0;
+}
+
+.aboutContent {
+  width: 100%;
+  max-width: 1000px;
+
+  margin: 0 auto;
+}
+
+.aboutContent h2 {
+  font-size: clamp(40px, 5vw, 72px);
+
+  line-height: 1.05;
+  letter-spacing: -0.05em;
+
+  font-weight: 600;
+
+  margin: 0 auto 32px;
+
+  max-width: 900px;
+}
+
+.aboutDescription {
+  max-width: 760px;
+
+  margin: 0 auto;
+
+  font-size: 20px;
+  line-height: 1.9;
+
+  color: rgba(255,255,255,0.72);
+}
+
+/* TABLET */
+
+@media (max-width: 900px) {
+
+  .aboutSection {
+    min-height: auto;
+    padding: 60px 7%;
+  }
+
+  .aboutContent h2 {
+    font-size: 46px;
+  }
+
+  .aboutDescription {
+    font-size: 17px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+  .aboutContent h2 {
+    font-size: 38px;
+  }
+
+  .aboutDescription {
+    font-size: 16px;
+    line-height: 1.8;
+  }
+}

@@ -1,0 +1,131 @@
+/* components/Navbar/Navbar.css */
+
+.navbarWrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  pointer-events: none;
+}
+
+/* NAVBAR */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1440px;
+  min-height: 78px;
+  margin: 0 auto;
+  padding-top: 0;
+  padding-bottom: 0;
+  background:
+    rgba(8,8,8,0.45);
+  backdrop-filter: blur(18px);
+  border-bottom:
+    1px solid rgba(255,255,255,0.08);
+  pointer-events: auto;
+  transition:
+    background 0.35s ease,
+    border 0.35s ease,
+    transform 0.35s ease;
+}
+
+/* LOGO */
+
+.logo {
+  font-size: 13px;
+
+  font-weight: 700;
+
+  letter-spacing: 0.28em;
+
+  color: white;
+
+  flex-shrink: 0;
+}
+
+/* LINKS */
+
+.navLinks {
+  display: flex;
+  align-items: center;
+
+  gap: 42px;
+}
+
+.navLink {
+  position: relative;
+
+  color: rgba(255,255,255,0.72);
+
+  font-size: 14px;
+
+  font-weight: 500;
+
+  transition:
+    color 0.3s ease;
+}
+
+.navLink::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  bottom: -8px;
+
+  width: 0%;
+  height: 1px;
+
+  background: #d6ff3f;
+
+  transition: width 0.3s ease;
+}
+
+.navLink:hover {
+  color: white;
+}
+
+.navLink:hover::after {
+  width: 100%;
+}
+
+/* TABLET */
+
+@media (max-width: 900px) {
+  .navbar {
+    min-height: 72px;
+  }
+
+  .navLinks {
+    gap: 28px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+  .navLinks {
+    display: none;
+  }
+
+  .navbar {
+    min-height: 68px;
+  }
+
+  .logo {
+    font-size: 12px;
+    letter-spacing: 0.22em;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .navbar {
+    min-height: 64px;
+  }
+}

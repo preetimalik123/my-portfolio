@@ -1,0 +1,180 @@
+/* styles/layout.css */
+
+/* MAIN APP LAYOUT */
+
+.app {
+  position: relative;
+
+  min-height: 100vh;
+
+  overflow: hidden;
+
+  background: transparent;
+
+  color: white;
+}
+
+/* SECTION BASE */
+
+.section {
+  position: relative;
+  z-index: 2;
+
+  width: 100%;
+}
+
+/* CONTAINER */
+
+.container {
+  width: 100%;
+
+  max-width: 1440px;
+
+  margin: 0 auto;
+
+  padding-left: 7%;
+  padding-right: 7%;
+}
+
+/* SECTION SPACING */
+
+.sectionSpacing {
+  padding-top: 140px;
+  padding-bottom: 140px;
+}
+
+/* FLEX HELPERS */
+
+.flex {
+  display: flex;
+}
+
+.flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexBetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+/* GRID HELPERS */
+
+.gridTwo {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, 1fr);
+
+  gap: 32px;
+}
+
+.gridThree {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 32px;
+}
+
+/* MAX WIDTHS */
+
+.maxWidthSm {
+  max-width: 700px;
+}
+
+.maxWidthMd {
+  max-width: 900px;
+}
+
+.maxWidthLg {
+  max-width: 1200px;
+}
+
+/* CENTER */
+
+.textCenter {
+  text-align: center;
+}
+
+.mxAuto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* OVERFLOW */
+
+.overflowHidden {
+  overflow: hidden;
+}
+
+/* POSITION */
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+/* Z INDEX */
+
+.z1 {
+  z-index: 1;
+}
+
+.z2 {
+  z-index: 2;
+}
+
+.z10 {
+  z-index: 10;
+}
+
+/* TABLET */
+
+@media (max-width: 1100px) {
+
+  .gridTwo,
+  .gridThree {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 900px) {
+
+  .container {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .sectionSpacing {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .sectionSpacing {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}

@@ -1,0 +1,102 @@
+/* components/Marquee/Marquee.css */
+
+.marqueeSection {
+  position: relative;
+  z-index: 2;
+
+  overflow: hidden;
+
+  padding: 60px 0;
+}
+
+.marqueeWrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.marqueeTrack {
+  display: flex;
+
+  width: max-content;
+}
+
+.marqueeGroup {
+  display: flex;
+  align-items: center;
+
+  gap: 80px;
+
+  padding-right: 80px;
+
+  white-space: nowrap;
+
+  animation:
+    marqueeMove 22s linear infinite;
+}
+
+.marqueeGroup span {
+  font-size: clamp(42px, 5vw, 96px);
+
+  font-weight: 700;
+
+  line-height: 1.2;
+
+  padding: 12px 0;
+
+  letter-spacing: -0.05em;
+
+  color: rgba(255,255,255,0.08);
+
+  transition: color 0.3s ease;
+}
+
+.marqueeGroup span:hover {
+  color: rgba(214,255,63,0.3);
+}
+
+@keyframes marqueeMove {
+
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* TABLET */
+
+@media (max-width: 900px) {
+
+  .marqueeSection {
+    padding: 90px 0;
+  }
+
+  .marqueeGroup {
+    gap: 50px;
+    padding-right: 50px;
+  }
+
+  .marqueeGroup span {
+    font-size: 54px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+  .marqueeSection {
+    padding: 70px 0;
+  }
+
+  .marqueeGroup {
+    gap: 36px;
+    padding-right: 36px;
+  }
+
+  .marqueeGroup span {
+    font-size: 38px;
+  }
+}

@@ -208,24 +208,29 @@ a {
 .navbar {
   position: fixed;
   top: 0;
+  left: 0;
+
   width: 100%;
 
-  padding: 24px 7%;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  padding: 26px 50px;
 
   z-index: 1000;
 
   backdrop-filter: blur(18px);
 
-  background: rgba(0,0,0,0.15);
+  background: rgba(0,0,0,0.18);
 
-  border-bottom:
-    1px solid rgba(255,255,255,0.05);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
 }
+.navbarInner {
+  width: min(1600px, calc(100% - 100px));
 
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .logo {
   font-size: 13px;
   letter-spacing: 0.28em;
@@ -234,7 +239,8 @@ a {
 
 .navLinks {
   display: flex;
-  gap: 40px;
+   gap: 56px;
+     align-items: center;
 }
 
 .navLinks a {
@@ -254,7 +260,10 @@ a {
   min-height: 100vh;
 
   display: flex;
+  justify-content: center;   
   align-items: center;
+
+  text-align: center;  
 
   padding: 0 7%;
 
@@ -298,6 +307,11 @@ a {
   z-index: 10;
 
   max-width: 1000px;
+   width: 100%;            
+
+  display: flex;        
+  flex-direction: column;  
+  align-items: center; 
 }
 
 .availability {
@@ -683,6 +697,7 @@ a {
 .specificationsTable {
   border-top:
     1px solid rgba(255,255,255,0.08);
+    padding: 0 15px;
 }
 
 .specRow {
@@ -991,4 +1006,13 @@ a {
     flex-direction: column;
     align-items: flex-start;
   }
+}
+@media (max-width: 900px) {
+
+  .navbar {
+    left: 24px;
+    width: calc(100% - 48px);
+    padding: 22px 0;
+  }
+
 }
