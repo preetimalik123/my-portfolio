@@ -21,7 +21,7 @@ const experiences = [
   },
 
   {
-    company: "Nota Bene",
+    company: "Nota Bene Global Services",
 
     role: "Sr. Software Developer",
 
@@ -47,7 +47,7 @@ const experiences = [
   },
 
   {
-    company: "Nota Bene",
+    company: "Nota Bene Global Services",
 
     role: "Software Developer",
 

@@ -106,16 +106,14 @@
 
   color: rgba(255,255,255,0.72);
 
-  font-size: 14px;
+  font-size: 12px;
 }
 
 /* TITLE */
 
 .experienceCard h3 {
   margin-bottom: 20px;
-
-  font-size: clamp(30px, 4vw, 52px);
-
+  font-size: 30px;
   line-height: 1;
 
   letter-spacing: -0.05em;
@@ -126,7 +124,7 @@
 .experienceCard p {
   color: rgba(255,255,255,0.72);
 
-  font-size: 17px;
+  font-size: 15px;
 
   line-height: 1.9;
 }
